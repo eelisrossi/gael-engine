@@ -5,11 +5,6 @@ LRESULT CALLBACK MainWindowCallback(HWND Window, UINT Message, WPARAM WParam,
 {
     LRESULT Result = 0;
 
-    int a = 1;
-    int vitunpitkaint = 2;
-    int ab = 1;
-    int vittunpitkaint = 2;
-
     switch (Message)
     {
     case WM_SIZE:
@@ -28,7 +23,7 @@ LRESULT CALLBACK MainWindowCallback(HWND Window, UINT Message, WPARAM WParam,
     case WM_CLOSE:
     {
         OutputDebugStringA("WM_CLOSE");
-        DestroyWindow(Window);
+        PostQuitMessage(0);
     }
     break;
 
@@ -49,6 +44,7 @@ LRESULT CALLBACK MainWindowCallback(HWND Window, UINT Message, WPARAM WParam,
         PatBlt(DeviceContext, X, Y, Width, Height, WHITENESS);
         EndPaint(Window, &Paint);
     }
+    break;
 
     default:
     {
