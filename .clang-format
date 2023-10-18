@@ -1,20 +1,8 @@
 ---
-BasedOnStyle: LLVM
+BasedOnStyle: Mozilla
 IndentWidth: 4 
+AlignAfterOpenBracket: AlwaysBreak
+AlignOperands: Align
+AlignTrailingComments: Always
+PointerAlignment: Right
 ---
-Language: Cpp
-DerivePointerAlignment: false
-PointerAlignment: Left
-AlignAfterOpenBracket: Align
-
-AlignConsecutiveMacros:
-  Enabled: true
-  AcrossEmptyLines: true
-  AcrossComments: false
-
-AlignTrailingComments: true 
-BreakBeforeBraces: Allman
-ColumnLimit: 80
----
-
-
