@@ -1,8 +1,20 @@
+# ---
+# BasedOnStyle: Mozilla
+# IndentWidth: 4
+# AlignAfterOpenBracket: AlwaysBreak
+# AlignOperands: Align
+# AlignTrailingComments: Always
+# PointerAlignment: Right
+# ---
+
 ---
 BasedOnStyle: Mozilla
-IndentWidth: 4 
+IndentWidth: 4
 AlignAfterOpenBracket: AlwaysBreak
 AlignOperands: Align
 AlignTrailingComments: Always
 PointerAlignment: Right
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+ColumnLimit: 80
 ---
